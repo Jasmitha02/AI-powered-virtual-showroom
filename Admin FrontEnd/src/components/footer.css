@@ -1,0 +1,12 @@
+.yellow{
+    color:#ffac3c;
+}
+.nav-link:hover{
+    text-decoration: none;
+    color: #ffac3c;
+    font-size: 1.2rem;
+}
+.nav-link{
+    color: #ffac3c;
+}
+  
