@@ -68,3 +68,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## Features
+
+### 1. Interactive Virtual Car Showroom
+Our virtual car showroom offers users an interactive platform to explore a wide range of car models. With intuitive navigation and a user-friendly interface, browsing through different cars becomes seamless and enjoyable.
+
+### 2. AI-Driven Personalization
+We have implemented an advanced recommender system that tailors car recommendations based on individual preferences. By analyzing user behavior and preferences, our system suggests cars that best match the user's interests, enhancing the overall shopping journey.
+
+### 3. Image Recognition
+Our platform utilizes cutting-edge image recognition technology to identify car models from user-uploaded images. This feature allows users to easily discover information about a specific car model by simply uploading an image, thereby enriching the user interaction and providing valuable insights.
+
