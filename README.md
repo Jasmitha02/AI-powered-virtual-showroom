@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+### Recommendation and Price Prediction System for Used Cars
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### Overview
+This project aims to develop a recommendation and price prediction system for used cars listed on Craigslist based on historical sales data scrapped from all over the United States between April to May of 2021. The system is designed to assist both buyers and sellers by providing recommendations for similar listings and predicting ballpark prices for specific models and features.
 
-## Available Scripts
+#### Key Objectives
+1. **Recommendation System:** Develop a content-based recommender system to suggest similar listings to users based on vehicle features.
+2. **Price Prediction Model:** Create a model to predict prices for specific car models and features, assisting buyers and sellers in determining fair market values.
 
-In the project directory, you can run:
+#### Dataset
+- The dataset was compiled by a data contributor, Austin Reese, and obtained from Kaggle. It contains relevant information such as vehicle price, condition, manufacturer, location, and other categories.
+- Data cleaning involved removing irrelevant columns, handling missing values, and removing outliers to ensure data quality.
 
-### `npm start`
+#### Methodology
+1. **Recommendation System Development:** Utilized TdIdfVectorizer and cosine_similarity from scikit-learn to develop a content-based recommendation system. The system suggests the top 6 most similar cars to a given input.
+2. **Price Prediction Model:** Explored correlations between variables and preprocessed the data using LabelEncoder from sklearn. Evaluated three regression models and selected Random Forest Regressor, achieving an accuracy score of 87.79%.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Insights
+- Most listings are concentrated in the top 10 most populated states, with Ford, Chevrolet, and Toyota being the most popular manufacturers.
+- Luxury cars (sedans and SUVs) have a significant market, suggesting a focus for the recommendation engine.
+- California has the highest number of listings with an average price lower than Washington state, indicating potential market dynamics.
+- Gasoline engines dominate, except for pickups and trucks, which show a split between gas and diesel engines.
+- Most cars have below-average miles driven per year, indicating good value, especially for those in excellent or good condition.
+- Newer cars tend to have higher average prices, influenced by factors such as vintage cars and luxury levels.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Conclusion
+The recommendation and price prediction system developed in this project can greatly benefit both buyers and sellers navigating the used car market on Craigslist. By leveraging historical sales data and machine learning techniques, users can make more informed decisions regarding their car transactions.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For detailed implementation instructions and usage guidelines, please refer to the project documentation.
